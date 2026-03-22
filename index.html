@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Sis!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hello i am shashwat sinha of 1st year cse</h1>
-    
+  <main class="page-shell">
+    <section class="card hero-card" aria-live="polite">
+      <p class="eyebrow">Birthday mission activated</p>
+      <h1>Hey Sister, answer these extremely serious questions 🎉</h1>
+      <p class="subtitle">
+        Every answer is correct, every choice is funny, and the reward at the end is a big birthday surprise.
+      </p>
+
+      <div id="quiz-card" class="quiz-card">
+        <div class="progress-row">
+          <span id="progress-text">Question 1 of 5</span>
+          <div class="progress-bar" aria-hidden="true">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="question-box">
+          <h2 id="question-text"></h2>
+          <p id="question-note" class="question-note"></p>
+        </div>
+
+        <div id="answers" class="answers" role="list"></div>
+
+        <div id="reaction" class="reaction" aria-live="polite"></div>
+
+        <button id="next-button" class="next-button" type="button" hidden>
+          Next ridiculous question →
+        </button>
+      </div>
+
+      <div id="final-screen" class="final-screen hidden">
+        <div class="confetti-line">🎂 ✨ 🎈 💖 🥳 🌟</div>
+        <h2>Happy Birthday, Superstar Sister!</h2>
+        <p id="final-message"></p>
+        <ul id="answer-recap" class="answer-recap"></ul>
+        <p class="birthday-note">
+          Wishing you a year full of dessert, laughter, zero stress, and dramatic slow-motion entrances.
+        </p>
+        <button id="restart-button" class="restart-button" type="button">Play again</button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
